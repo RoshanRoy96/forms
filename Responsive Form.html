@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Form</title>
+        <style>
+        .container{
+           width: 40%;
+           margin: auto;
+           height: 576px;
+           border: 1px solid red;
+           background-image: linear-gradient(skyblue,black);
+        }
+        h1{
+            color:aliceblue;
+            text-align: center;
+            text-decoration: underline;
+        }
+        .form-container{
+            margin-left: 25px;
+        }
+        .user-fname{
+            float: left;
+        }
+        .user-lname{
+            float: left;
+            margin-left: 50px;
+        }
+        #fname{
+            width: 200px;
+            height: 24px;
+            border-radius: 5px;
+            border-color: black;
+        }
+        #lname{
+            width: 200px;
+            height: 24px;
+            border-radius: 5px;
+            border-color: black;
+        }
+        .user-mail{
+            float: left;
+            margin-top: 10px;
+        }
+        .user-contact{
+            float: left;
+            margin-left: 50px;
+            margin-top: 10px;
+        }
+        #email{
+            width: 200px;
+            height: 24px;
+            border-radius: 5px;
+            border-color: black;
+        }
+        #contact{
+            width: 200px;
+            height: 24px;
+            border-radius: 5px;
+            border-color: black;
+        }
+        .user-dob{
+            float: left;
+            margin-top: 10px;
+        }
+        .select{
+            float: left;
+            margin-top: 10px;
+            margin-left: 50px;
+        }
+        #dob{
+            width: 200px;
+            height: 24px;
+            border-radius: 5px;
+            border-color: black;
+        }
+        #state{
+            width: 210px;
+            height: 24px;
+            border-radius: 5px;
+            border: 2px solid black;
+        }
+        .gender-details{
+            float: left;
+            margin-top: 10px;
+            clear: both;
+        }
+        .text{
+            float: left;
+            margin-top: 10px;
+            clear: both;
+        }
+        #subject{
+            border: 2px solid black;
+            resize: vertical;
+        }
+        .form-submit{
+            float: left;
+            clear: both;
+            margin-top: 10px;
+        }
+        .button{
+            background-color: darkcyan;
+            color: white;
+            width: 460px;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        label{
+            color: white;
+        }
+        @media screen and (max-width: 600px){
+            .user-fname,.user-lname,.user-mail,.user-contact,.user-dob,.select,.gender-details,.text,.form-submit{
+                width: 100%;
+                margin-top: 0;
+            }
+        }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Static Form</h1>
+            <div class="form-container">
+            <form>
+                <div class="user-fname">
+                    <label for="fname">First Name</label><br>
+                    <input type="text" name="fname" id="fname" placeholder="Enter your first name">
+                </div>
+                <div class="user-lname">
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" name="lname" id="lname" placeholder="Enter your last name">
+                </div>
+                <div class="user-mail">
+                    <label for="email">Email</label><br>
+                    <input type="email" name="email" id="email" placeholder="Enter your Email"><br>
+                </div>
+                <div class="user-contact">
+                    <label for="contact">Contact Number</label><br>
+                    <input type="phone number" name="contact" id="contact" placeholder="Enter your contact number"><br>
+                </div>
+                <div class="user-dob">
+                    <label for="dob">Date of Birth</label><br>
+                    <input type="date" name="dob" id="dob" placeholder="Enter your date of birth"><br>
+                </div>
+                <div class="select">
+                    <label for="state">State</label><br>
+                    <select name="state" id="state">
+                        <option>-Select-</option>
+                        <option>Kerala</option>
+                        <option>Karnataka</option>
+                        <option>Tamil Nadu</option>
+                    </select>
+                </div>
+                <div class="gender-details">
+                    <label for="gender">Gender</label><br>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="other">
+                    <label for="other">Other</label>
+                </div>
+                <div class="text">
+                    <label for="Subject">Subject</label><br>
+                    <textarea name="subject" id="subject" placeholder="Enter something...." rows="10" cols="60"></textarea> 
+                </div>
+                <div class="form-submit">
+                    <input class="button" type="submit" value="Submit">
+                </div>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
